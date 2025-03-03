@@ -1,0 +1,57 @@
+
+h1{
+    color:darkgreen;
+}
+
+h2{color:green;}
+
+body{
+    background-color: black;
+    color:white;
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+strong{
+    color: seagreen;
+}
+
+span{
+    color: blueviolet;
+    border: 2px solid #ffffff;
+    padding: 2px;
+}
+
+header{border-bottom: 2px solid yellow;}
+footer{border-top: 2px solid yellow;}
+#vermelho{color:red}
+#verdão{font-size:xx-large; color:darkgreen;font-weight: bold;}
+.itálico{font-style: italic;}
+
+
+.menu-acessibilidade{
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+
+.apresenta-lista{
+    display: none;
+}
