@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+<link rel="stylesheet" href="style.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CFC SIM SAF NÃO</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 
     
@@ -27,19 +32,39 @@ Porque futebol é no campo e na raça, não é de graça, mas a grana não é pr
 
 </head>
 <body>
+    <link rel="stylesheet" href="style.css">
     <header>
         // esses botões não funcionam como deveriam
         <div id="acessibilidade" class="menu-acessibilidade">
-            <button id="botao-acessibilidade"class="btn btn-primary fw-bold rotacao-botao"> acessibilidade </button>
+            <button id="botao-acessibilidade"class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade </button>
             <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                <button id="aumentar-fonte" class="btn btn-primary fw-bold"> A+ </button> <br>
-                <button id="diminuir-fonte" class="btn btn-primary fw-bold"> A- </button>
+                <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte"> A+ </button>
+                <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte"> A- </button>
+                <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"> <i class="bi bi-shadows"></i></button>
             </div>
              
+       
+
+
+
         </div>
         <h1> CFC SIM SAF NÃO </h1>
         <p> Por que entregar o trabalho de uma nação a um <span id="vermelho">são paulino</span></p>
     </header>
+
+    <section id="inicio" class="my-5">
+        <div class="inicio-fundo d-flex justify-content-between align-items-center">
+            <div class="esquerda-conteudo">
+                <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                <img src="imagens/Sacos_de_café,_Casa_do_Bandeirante_2.jpeg" class="mb-3" width="563"
+                    height="278" loading="lazy">
+                <a href="#cafe"
+                    class="btn btn-primary btn-lg botao-inicio fw-semibold">Somos sacos de café?</a>
+            </div>
+            <img src="imagens/coxa.jpg" alt="A imagem diversos escudos do Coritiba" title="Coritiba" class="img-fluid img-inicio">
+
+          </div>
+    </section>
 
     <section>
         <h2> Quem construiu o CORITIBA?</h2>
@@ -60,5 +85,11 @@ Porque futebol é no campo e na raça, não é de graça, mas a grana não é pr
 
     </footer>
     <script src="main.js"></script>
+
+   
+
+
+
+
 </body>
 </html>

@@ -1,9 +1,27 @@
 
+:root {
+    --seagreen: #2e8b57;
+    --alto-contraste-fundo: #ffffff;
+    --alto-contraste-letra: #000000;
+    --alto-contraste-link: #ff0000;
+
+    
+
+
+
+
+
+
+
+}
 h1{
     color:darkgreen;
+    text-align: center;
 }
 
-h2{color:green;}
+h2{color:green;
+    text-align: center;}
+
 
 body{
     background-color: black;
@@ -14,7 +32,7 @@ body{
 }
 
 strong{
-    color: seagreen;
+    color: #2e8b57;
 }
 
 span{
@@ -25,9 +43,31 @@ span{
 
 header{border-bottom: 2px solid yellow;}
 footer{border-top: 2px solid yellow;}
-#vermelho{color:red}
+#vermelho{color:#ff0000}
 #verdão{font-size:xx-large; color:darkgreen;font-weight: bold;}
 .itálico{font-style: italic;}
+
+#cafe {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('imagens/Coffee_beans2.jpg') top right no-repeat,
+        url('imagens/Sacos_de_café,_Casa_do_Bandeirante_2.jpeg') bottom left no-repeat;
+    background-size: 180px 180px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+#cafe .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;}
+    /* Garante que o conteúdo fica acima das imagens do background */
+
+
+
 
 
 .menu-acessibilidade{
@@ -54,4 +94,37 @@ footer{border-top: 2px solid yellow;}
 
 .apresenta-lista{
     display: none;
+}
+
+.alto-contraste {
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-letra);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-letra);
+}
+
+.alto-contraste .nav_link{
+    color: var(--alto-contraste-link);
+}
+
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+
+.alto-contraste #tropicalia {
+    background: none;
 }

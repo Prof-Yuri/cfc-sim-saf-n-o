@@ -1,3 +1,0 @@
-# cfc-sim-saf-n-o
-
-Atividade para Alura...
